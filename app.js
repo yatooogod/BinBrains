@@ -3,8 +3,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const https = require('https');
-const fs = require('fs');
 
 const app = express();
 
@@ -30,14 +28,8 @@ mongoose.connect(process.env.MONGO_URI, {
 const userRoutes = require('./routes/userRoutes');
 app.use('/', userRoutes);  // Use userRoutes for handling requests
 
-// SSL Certificate paths (for HTTPS)
-const sslOptions = {
-    key: fs.readFileSync('C:/Users/PC/Documents/ssl certificates/server.key'),  // Path to your server key
-    cert: fs.readFileSync('C:/Users/PC/Documents/ssl certificates/server.crt')  // Path to your certificate
-};
-
-// Start the HTTPS server on the specified port (default 3000)
+// Start the HTTP server on the specified port (default 3000)
 const PORT = process.env.PORT || 3000;
-https.createServer(sslOptions, app).listen(PORT, () => {
-    console.log(`Server running at https://localhost:${PORT}`);
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
 });
