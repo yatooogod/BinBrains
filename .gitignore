@@ -16,3 +16,4 @@ package-lock.json
 # Ignore system files
 .DS_Store
 Thumbs.db
+.vercel

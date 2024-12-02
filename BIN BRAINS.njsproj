@@ -29,6 +29,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include=".env" />
+    <Content Include=".gitignore" />
     <Content Include="app.js" />
     <Content Include="images\logo.png" />
     <Content Include="images\monitoring.png" />

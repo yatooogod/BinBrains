@@ -2,7 +2,7 @@
   "name": "bin-brains",
   "version": "0.0.0",
   "description": "BIN BRAINS",
-  "main": "server.js",
+  "main": "app.js",
   "author": "",
   "devDependencies": {
     "eslint": "^8.21.0"
@@ -10,7 +10,7 @@
   "eslintConfig": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "license": "ISC",
