@@ -1,0 +1,27 @@
+{
+  "name": "bin-brains",
+  "version": "0.0.0",
+  "description": "BIN BRAINS",
+  "main": "server.js",
+  "author": "",
+  "devDependencies": {
+    "eslint": "^8.21.0"
+  },
+  "eslintConfig": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.1",
+    "qrcode": "^1.5.4"
+  }
+}

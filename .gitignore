@@ -1,0 +1,18 @@
+# Ignore Visual Studio specific files
+.vs/
+
+# Ignore node_modules
+node_modules/
+
+# Ignore environment variables
+.env
+
+# Ignore package-lock.json
+package-lock.json
+
+# Ignore log files
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db

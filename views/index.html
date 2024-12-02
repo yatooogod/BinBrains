@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        .container h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .form-container {
+            display: none;
+        }
+
+            .form-container.active {
+                display: block;
+            }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745; /* Green button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #218838;
+            }
+
+        .toggle {
+            margin-top: 20px;
+            color: #007bff;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 16px;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="images/logo.png" alt="Bin Brains Logo" class="logo"> <!-- Your logo here -->
+        <h2 id="form-title">Login</h2>
+
+        <!-- Login Form -->
+        <div id="login-form" class="form-container active">
+            <form action="/login" method="POST">
+                <input type="text" name="username" placeholder="Username" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <button type="submit">Log In</button>
+            </form>
+            <p class="toggle" onclick="toggleForm('register')">Don't have an account? Register here</p>
+        </div>
+
+        <!-- Register Form -->
+        <div id="register-form" class="form-container">
+            <form action="/register" method="POST">
+                <input type="text" name="username" placeholder="Username" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <button type="submit">Register</button>
+            </form>
+            <p class="toggle" onclick="toggleForm('login')">Already have an account? Log in here</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle between forms
+        function toggleForm(form) {
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+            const formTitle = document.getElementById('form-title');
+
+            if (form === 'login') {
+                loginForm.classList.add('active');
+                registerForm.classList.remove('active');
+                formTitle.textContent = 'Login';
+            } else {
+                loginForm.classList.remove('active');
+                registerForm.classList.add('active');
+                formTitle.textContent = 'Register';
+            }
+        }
+
+        // On page load, set the hidden input value with the redirect URL
+        window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const redirectUrl = urlParams.get('redirect');
+            if (redirectUrl) {
+                document.getElementById('redirectUrl').value = redirectUrl;
+            }
+        };
+    </script>
+
+</body>
+</html>

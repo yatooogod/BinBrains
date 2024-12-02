@@ -1,0 +1,513 @@
+/* General Styles */
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+#walletSection {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px; /* Reduced padding for smaller display */
+    max-width: 800px; /* Set a smaller max width */
+    margin: 20px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 20px; /* Reduced margin */
+}
+
+.greeting {
+    font-size: 1.8em; /* Reduced size for mobile compatibility */
+    color: #4CAF50;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 1em; /* Smaller font for better fit */
+    color: #777;
+}
+
+/* Green Points Section */
+.points-container {
+    background-color: #eaf8e1;
+    padding: 15px; /* Reduced padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px; /* Space below */
+}
+
+    .points-container h2 {
+        font-size: 1.4em; /* Smaller size */
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+#points {
+    font-size: 1.6em; /* Adjusted font size for points */
+    font-weight: bold;
+    color: #4CAF50;
+    background-color: #f1f1f1;
+    padding: 12px;
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 100%; /* Prevents overflow */
+    word-wrap: break-word;
+}
+
+/* What's New Section */
+.whats-new-container {
+    background-color: #ffffff;
+    padding: 15px; /* Reduced padding */
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+    .whats-new-container h3 {
+        font-size: 1.6em; /* Adjusted size */
+        color: #4CAF50;
+        margin-bottom: 15px;
+    }
+
+    .whats-new-container p {
+        font-size: 1em; /* Slightly smaller text for better mobile display */
+        color: #555;
+        line-height: 1.6;
+    }
+
+/* Success Message */
+.alert-success {
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #walletSection {
+        padding: 15px; /* Further reduced padding on smaller screens */
+        max-width: 90%; /* Allow for better fitting */
+    }
+
+    .greeting {
+        font-size: 1.5em; /* Smaller greeting for mobile */
+    }
+
+    .subheading {
+        font-size: 0.9em;
+    }
+
+    .points-container h2 {
+        font-size: 1.2em; /* Adjust for mobile */
+    }
+
+    #points {
+        font-size: 1.4em; /* Make points font size smaller for mobile */
+    }
+
+    .whats-new-container h3 {
+        font-size: 1.4em;
+    }
+
+    .whats-new-container p {
+        font-size: 0.9em; /* Smaller text on mobile for readability */
+    }
+}
+
+    /* Icon for Notifications */
+    li .icon {
+        margin-right: 10px;
+        font-size: 20px;
+        color: #4CAF50;
+    }
+
+/* Monitoring Chart */
+#pointsChart {
+    margin: 20px auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottom Buttons Section */
+.bottom-buttons {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.button {
+    width: 18%;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    font-size: 10px;
+}
+
+    .button:hover {
+        background-color: #eaf8e1;
+        transform: translateY(-3px);
+    }
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+span {
+    font-size: 10px;
+    color: #555;
+}
+
+/* Responsive Adjustments for Buttons */
+@media (max-width: 768px) {
+    .button {
+        width: 20%;
+        padding: 6px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    span {
+        font-size: 9px;
+    }
+}
+
+/* Settings Section */
+#settingsSection {
+    padding: 15px;
+    width: 100%;
+    max-width: 90%; /* Use percentage width for better adaptability */
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.settings-group {
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+        border-color: #4CAF50;
+        outline: none;
+    }
+
+button#updateUsernameBtn,
+button#changePasswordBtn,
+button#logoutBtn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 0.9em; /* Adjust font size for better scaling */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+    button#updateUsernameBtn:hover,
+    button#changePasswordBtn:hover,
+    button#logoutBtn:hover {
+        background-color: #45a049;
+    }
+
+/* Logout Button Styling */
+.logout-button {
+    background-color: #f44336;
+    color: white;
+    font-size: 0.9em;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .logout-button:hover {
+        background-color: #e53935;
+    }
+
+/* Responsive Adjustments for Settings */
+@media (max-width: 768px) {
+    #settingsSection {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    h3 {
+        font-size: 1.1em; /* Adjust font size for headings */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 0.9em; /* Adjust font size for inputs */
+        padding: 8px; /* Adjust input padding */
+    }
+
+    button#updateUsernameBtn,
+    button#changePasswordBtn,
+    button#logoutBtn {
+        font-size: 0.9em; /* Adjust button font size */
+        padding: 8px; /* Adjust button padding */
+    }
+}
+
+/* Success Message Styling */
+.alert-success {
+    padding: 15px;
+    background-color: #28a745; /* Green background */
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none;
+}
+
+    .alert-success button {
+        background-color: #fff;
+        color: #28a745;
+        border: none;
+        padding: 8px 16px;
+        margin-left: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+
+
+/* Notification Section Styling */
+#notificationSection {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default, can be shown dynamically */
+}
+
+    #notificationSection h1 {
+        font-size: 2em;
+        font-weight: bold;
+        color: #4CAF50;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #notificationSection h3 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+/* Notification List Styling */
+#notifications {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+    #notifications li {
+        font-size: 1.1em;
+        padding: 15px;
+        margin-bottom: 10px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        color: #333;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+        #notifications li:hover {
+            background-color: #eaf8e1; /* Light green on hover */
+            transform: translateY(-2px);
+        }
+
+        #notifications li .icon {
+            font-size: 20px;
+            color: #4CAF50;
+            margin-right: 10px;
+        }
+
+        /* Success/Error Message Styling inside Notification */
+        #notifications li.success {
+            background-color: #28a745;
+            color: white;
+        }
+
+        #notifications li.error {
+            background-color: #f44336;
+            color: white;
+        }
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #notificationSection {
+        padding: 15px; /* Reduced padding for mobile view */
+        max-width: 90%;
+    }
+
+        #notificationSection h1 {
+            font-size: 1.8em;
+        }
+
+        #notificationSection h3 {
+            font-size: 1.2em;
+        }
+
+    #notifications li {
+        font-size: 1em; /* Slightly smaller text for mobile */
+    }
+}
+/* Rewards Section Styling */
+#rewardsSection {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+    #rewardsSection h1 {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #4CAF50;
+        margin-bottom: 20px;
+    }
+
+    #rewardsSection p {
+        font-size: 1.2em;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+/* Grid Layout for Reward Items */
+.rewards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns by default */
+    gap: 20px; /* Space between grid items */
+    justify-items: center;
+}
+
+/* Individual Reward Card Styling */
+.reward-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px; /* Fixed width for each card */
+    height: 300px; /* Fixed height for each card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+    .reward-item:hover {
+        transform: translateY(-5px); /* Slightly lift the card on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More intense shadow on hover */
+    }
+
+    .reward-item img {
+        width: 100%; /* Ensure the image fits the width of the card */
+        height: 150px; /* Fixed height for the image */
+        object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .reward-item h3 {
+        font-size: 1.3em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .reward-item p {
+        font-size: 1em;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .reward-item button {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 15px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .reward-item button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    /* Reduce number of columns to 1 on smaller screens */
+    .rewards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adjust card dimensions */
+    .reward-item {
+        width: 100%;
+        height: auto; /* Allow the height to be flexible */
+    }
+}

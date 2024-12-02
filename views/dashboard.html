@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/style.css"> <!-- Link to the main stylesheet -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Add Chart.js -->
+</head>
+<body>
+
+    <!-- Wallet Section -->
+    <div id="walletSection" class="section">
+        <div class="header">
+            <h1 class="greeting">Let's Sort the Earth, One Point at a Time!</h1>
+            <p class="subheading">Your journey to a cleaner planet begins here</p>
+        </div>
+
+        <div class="points-container">
+            <h2>My Green Points:</h2>
+            <p id="points">Loading points...</p> <!-- Placeholder for user points -->
+        </div>
+
+        <!-- Whats New Section (inside wallet section) -->
+        <div id="whatsNewSection" class="whats-new-container">
+            <h3>What's New</h3>
+            <p>Welcome to <strong>Cash-in-the-Bin: Your Smart Waste Solution with Earning Rewards</strong>, an innovative project brought to you by <strong>Bin Brains</strong>! Our mission is to help you recycle smarter and earn rewards while contributing to a cleaner planet. Start collecting Green Points today and turn them into amazing rewards! Stay tuned for upcoming features and challenges.</p>
+        </div>
+
+        <!-- Success Message -->
+        <div id="success-message" class="alert alert-success" style="display:none;">
+            <!-- Success message will appear here -->
+        </div>
+    </div>
+
+
+
+    <!-- Notification Section -->
+    <div id="notificationSection" class="section" style="display: none;">
+        <h1>Notifications</h1>
+
+        <h3>Transaction History:</h3>
+        <ul id="notifications">
+            <!-- Placeholder for notifications -->
+            <li>Loading notifications...</li>
+        </ul>
+    </div>
+
+    <!-- Monitoring Section -->
+    <div id="monitoringSection" class="section" style="display: none;">
+        <h1>Overall Monitoring</h1>
+        <canvas id="pointsChart" width="400" height="400"></canvas>
+    </div>
+
+    <!-- Settings Section -->
+    <div id="settingsSection" class="section" style="display: none;">
+        <h1>Account Settings</h1>
+
+        <!-- Update Username -->
+        <div class="settings-group">
+            <h3>Update Username</h3>
+            <input type="text" id="usernameInput" placeholder="Enter new username" />
+            <button id="updateUsernameBtn">Update Username</button>
+        </div>
+
+        <!-- Change Password -->
+        <div class="settings-group">
+            <h3>Change Password</h3>
+            <input type="password" id="currentPassword" placeholder="Current password" />
+            <input type="password" id="newPassword" placeholder="New password" />
+            <button id="changePasswordBtn">Change Password</button>
+        </div>
+
+        <!-- Log Out -->
+        <div class="settings-group">
+            <button id="logoutBtn" class="logout-button">Log Out</button>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Buttons -->
+    <div class="bottom-buttons">
+        <button class="button" id="walletBtn">
+            <img src="/images/wallet.png" alt="Wallet" class="icon">
+            <span>Wallet</span>
+        </button>
+        <button class="button" id="notificationBtn">
+            <img src="/images/notification.png" alt="Notifications" class="icon">
+            <span>Notifications</span>
+        </button>
+        <button class="button" id="monitoringBtn">
+            <img src="/images/monitoring.png" alt="Monitoring" class="icon">
+            <span>Overall Monitoring</span>
+        </button>
+        <button class="button" id="rewardsBtn">
+            <img src="/images/reward.png" alt="Rewards" class="icon">
+            <span>Rewards</span>
+        </button>
+        <button class="button" id="settingsBtn">
+            <img src="/images/settings.png" alt="Settings" class="icon">
+            <span>Settings</span>
+        </button>
+    </div>
+
+    <div id="rewardsSection">
+        <h1>Rewards</h1>
+        <p>Browse Available Rewards:</p>
+        <div class="rewards-grid" id="rewardsList">
+            <!-- Reward items will be dynamically inserted here -->
+        </div>
+    </div>
+
+
+
+    <script src="/script.js"></script> <!-- Link to the main JS file -->
+</body>
+</html>
