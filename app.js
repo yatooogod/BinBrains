@@ -25,8 +25,8 @@ mongoose.connect(process.env.MONGO_URI, {
     .catch((err) => console.error('MongoDB connection error:', err));
 
 // Routes
-const userRoutes = require('./routes/userRoutes');
-app.use('/', userRoutes);  // Use userRoutes for handling requests
+const userRoutes = require('./routes/UserRoutes');
+app.use('/', userRoutes);  // Use UserRoutes for handling requests
 
 // Start the HTTP server on the specified port (default 3000)
 const PORT = process.env.PORT || 3000;

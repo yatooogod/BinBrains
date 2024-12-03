@@ -47,7 +47,7 @@
     <Content Include="public\script.js" />
     <Content Include="public\style.css" />
     <Content Include="README.md" />
-    <Content Include="routes\userRoutes.js" />
+    <Content Include="routes\UserRoutes.js" />
     <Content Include="tsconfig.json" />
     <Content Include="vercel.json" />
     <Content Include="views\dashboard.html" />
