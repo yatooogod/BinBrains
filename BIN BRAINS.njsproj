@@ -30,7 +30,7 @@
   <ItemGroup>
     <Content Include=".env" />
     <Content Include=".gitignore" />
-    <Content Include="api\index.js" />
+    <Content Include="api\index.ts" />
     <Content Include="app.js" />
     <Content Include="images\logo.png" />
     <Content Include="images\monitoring.png" />
