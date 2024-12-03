@@ -5,7 +5,9 @@
   "main": "app.js",
   "author": "",
   "devDependencies": {
-    "eslint": "^8.21.0"
+    "@types/node": "^22.10.1",
+    "eslint": "^8.21.0",
+    "typescript": "^5.7.2"
   },
   "eslintConfig": {},
   "scripts": {

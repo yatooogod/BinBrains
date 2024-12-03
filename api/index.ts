@@ -22,7 +22,14 @@ mongoose.connect(process.env.MONGO_URI, {
     useUnifiedTopology: true
 })
     .then(() => console.log('MongoDB connected'))
-    .catch((err) => console.error('MongoDB connection error:', err));
+    .catch((err: unknown) => {
+        if (err instanceof Error) {
+            console.error('MongoDB connection error:', err.message);
+        } else {
+            console.error('Unknown error:', err);
+        }
+    });
+
 
 // Routes
 const userRoutes = require('./routes/userRoutes');
