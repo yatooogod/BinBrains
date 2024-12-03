@@ -30,6 +30,7 @@
   <ItemGroup>
     <Content Include=".env" />
     <Content Include=".gitignore" />
+    <Content Include="api\index.js" />
     <Content Include="app.js" />
     <Content Include="images\logo.png" />
     <Content Include="images\monitoring.png" />
@@ -47,6 +48,7 @@
     <Content Include="public\style.css" />
     <Content Include="README.md" />
     <Content Include="routes\userRoutes.js" />
+    <Content Include="vercel.json" />
     <Content Include="views\dashboard.html" />
     <Content Include="views\index.html" />
   </ItemGroup>
@@ -54,6 +56,7 @@
     <Folder Include="models\" />
     <Folder Include="middleware\" />
     <Folder Include="images\" />
+    <Folder Include="api\" />
     <Folder Include="public\" />
     <Folder Include="views\" />
     <Folder Include="routes\" />
