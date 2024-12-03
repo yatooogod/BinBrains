@@ -17,10 +17,7 @@ app.use('/images', express.static(path.join(__dirname, 'images')));  // Serve im
 app.set('view engine', 'html');  // Set the view engine to 'html'
 
 // Database Connection
-mongoose.connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log('MongoDB connected'))
     .catch((err: unknown) => {
         if (err instanceof Error) {
@@ -29,7 +26,6 @@ mongoose.connect(process.env.MONGO_URI, {
             console.error('Unknown error:', err);
         }
     });
-
 
 // Routes
 const userRoutes = require('./routes/userRoutes');
