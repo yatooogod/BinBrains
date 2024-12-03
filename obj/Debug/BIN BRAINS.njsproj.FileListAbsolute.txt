@@ -1,3 +1,0 @@
-C:\Users\PC\source\repos\BIN BRAINS\obj\Debug\BIN BRAINS.njsproj.AssemblyReference.cache
-C:\Users\PC\source\repos\BIN BRAINS\obj\Debug\BIN BRAINS.njsproj.CoreCompileInputs.cache
-C:\Users\PC\source\repos\BIN BRAINS\bin\Microsoft.NodejsTools.WebRole.dll
