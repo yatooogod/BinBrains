@@ -511,3 +511,73 @@ button#logoutBtn {
         height: auto; /* Allow the height to be flexible */
     }
 }
+
+/* Centering the whole monitoring section */
+#monitoringSection {
+    text-align: center;
+    margin-top: 30px;
+}
+
+    /* Style for Your Green Scoreboard (Make it Green) */
+    #monitoringSection h1 {
+        background-color: #4CAF50; /* Green background */
+        color: white; /* White text */
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+/* Chart container styling (to ensure it doesn't shrink or grow too big) */
+.chart-container {
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+    max-width: 100%; /* Prevent shrinking beyond container */
+    width: 90%; /* Adjust width for both small and large screens */
+    max-width: 600px; /* Ensure the chart doesn't become too wide on large screens */
+}
+
+/* Under Development message styling */
+.under-development-message {
+    background-color: #f0ad4e;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Chart canvas styling to make it responsive */
+#pointsChart {
+    width: 100% !important;
+    max-height: 400px; /* Limit the maximum height */
+    height: 300px; /* Default height for chart */
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    #monitoringSection h1 {
+        font-size: 1.5rem; /* Slightly smaller text on mobile */
+        padding: 10px; /* Adjust padding */
+    }
+
+    /* Adjust chart height on mobile */
+    #pointsChart {
+        height: 250px; /* Smaller height on mobile */
+    }
+}
+
+/* Optional: Add some playful styles to the heading */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
