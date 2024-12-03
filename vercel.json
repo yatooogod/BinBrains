@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "env": {
+    "MONGO_URI": "mongodb+srv://benedict:benedict72@cluster0.xwyte.mongodb.net/binbrains?retryWrites=true&w=majority&appName=Cluster0",
+    "JWT_SECRET": "benedict72"
+  }
+}
