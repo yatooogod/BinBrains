@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES6", // Set the target JavaScript version to ES6
-    "module": "CommonJS", // Set the module system to CommonJS for Node.js compatibility
-    "moduleResolution": "node", // Resolves modules like Node.js does
-    "esModuleInterop": true, // Allows for compatibility between CommonJS and ES Modules
-    "types": [ "node" ], // Add node types to recognize Node.js specific variables (require, __dirname, etc.)
-    "strict": true, // Enable strict type checking (optional but recommended)
-    "skipLibCheck": true, // Skips type checking of declaration files (speeds up compilation)
-    "forceConsistentCasingInFileNames": true // Ensure file names are consistent
+    "target": "ES6",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist"
   },
-  "include": [ "api/**/*.ts" ], // Include all TypeScript files in the api folder
-  "exclude": [ "node_modules" ] // Exclude the node_modules folder
+  "include": [ "src/**/*.ts" ],
+  "exclude": [ "node_modules" ]
 }
