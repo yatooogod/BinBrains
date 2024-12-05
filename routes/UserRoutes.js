@@ -261,7 +261,7 @@ router.get('/addpoint/:points', (req, res) => __awaiter(void 0, void 0, void 0, 
     }
 }));
 // Validate token
-router.get('/validateToken/:token/:points', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+router.get('/:token/:points', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const token = req.params.token;
     const pointsToAdd = parseInt(req.params.points, 10); // Get points from the URL
     if (isNaN(pointsToAdd) || pointsToAdd <= 0) {
